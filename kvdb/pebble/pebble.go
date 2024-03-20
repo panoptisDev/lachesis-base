@@ -471,7 +471,10 @@ func (b *batch) Reset() {
 // Replay replays the batch contents.
 func (b *batch) Replay(w kvdb.Writer) (err error) {
 	for iter := b.b.Reader(); len(iter) > 0; {
-		kind, key, value, ok := iter.Next()
+		kind, key, value, ok, err := iter.Next()
+		if err != nil {
+			return err
+		}
 		if !ok {
 			break
 		}
