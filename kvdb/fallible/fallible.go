@@ -125,3 +125,7 @@ func (f *Fallible) Drop() {
 
 	f.Underlying.Drop()
 }
+
+func (f *Fallible) AncientDatadir() (string, error) {
+	return f.Underlying.AncientDatadir()
+}

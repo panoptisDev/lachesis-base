@@ -153,6 +153,10 @@ func (f *wrapper) Drop() {
 	f.underlying.Drop()
 }
 
+func (f *wrapper) AncientDatadir() (string, error) {
+	return f.underlying.AncientDatadir()
+}
+
 // Snapshot is a DB snapshot.
 type Snapshot struct {
 	readWrapper

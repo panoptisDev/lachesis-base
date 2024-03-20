@@ -93,6 +93,10 @@ func (t *Table) Compact(start []byte, limit []byte) error {
 	return t.underlying.Compact(prefixed(start, t.prefix), end)
 }
 
+func (t *Table) AncientDatadir() (string, error) {
+	return t.underlying.AncientDatadir()
+}
+
 /*
  * Batch
  */

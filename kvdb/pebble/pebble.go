@@ -139,10 +139,10 @@ func New(path string, cache int, handles int, onClose func() error, onDrop func(
 	ref := pebble.NewCache(int64(cache * 2 / 3))
 	defer ref.Unref()
 	db, err := pebble.Open(path, &pebble.Options{
-		Cache:           ref,       // default 8 MB
-		MemTableSize:    cache / 3, // default 4 MB
-		MaxOpenFiles:    handles,   // default 1000
-		WALBytesPerSync: 0,         // default 0 (matches RocksDB = no background syncing)
+		Cache:           ref,               // default 8 MB
+		MemTableSize:    uint64(cache) / 3, // default 4 MB
+		MaxOpenFiles:    handles,           // default 1000
+		WALBytesPerSync: 0,                 // default 0 (matches RocksDB = no background syncing)
 		MaxConcurrentCompactions: func() int {
 			return 3
 		}, // default 1, important for big imports performance
@@ -194,6 +194,10 @@ func (db *Database) Drop() {
 	if db.onDrop != nil {
 		db.onDrop()
 	}
+}
+
+func (db *Database) AncientDatadir() (string, error) {
+	return "", nil
 }
 
 // AsyncFlush asynchronously flushes the in-memory buffer to the disk.
@@ -257,7 +261,12 @@ func (db *Database) NewBatch() kvdb.Batch {
 // of database content with a particular key prefix, starting at a particular
 // initial key (or after, if it does not exist).
 func (db *Database) NewIterator(prefix []byte, start []byte) kvdb.Iterator {
-	x := iterator{db.underlying.NewIter(bytesPrefixRange(prefix, start)), false, false}
+	iter, err := db.underlying.NewIter(bytesPrefixRange(prefix, start))
+	if err != nil {
+		// TODO: improve error handling
+		panic("failed to create iterator")
+	}
+	x := iterator{iter, false, false}
 	return &x
 }
 
@@ -408,7 +417,12 @@ func (s *snapshot) Get(key []byte) ([]byte, error) {
 }
 
 func (s *snapshot) NewIterator(prefix []byte, start []byte) kvdb.Iterator {
-	x := iterator{s.snap.NewIter(bytesPrefixRange(prefix, start)), false, false}
+	iter, err := s.snap.NewIter(bytesPrefixRange(prefix, start))
+	if err != nil {
+		// TODO: improve error handling
+		panic("failed to create iterator")
+	}
+	x := iterator{iter, false, false}
 	return &x
 }
 

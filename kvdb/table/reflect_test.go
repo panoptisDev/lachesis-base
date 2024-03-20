@@ -1,7 +1,5 @@
 package table
 
-//go:generate go run github.com/golang/mock/mockgen -package=table -destination=mock_test.go github.com/Fantom-foundation/lachesis-base/kvdb DBProducer,DropableStore
-
 import (
 	"testing"
 
@@ -27,7 +25,7 @@ func TestOpenTables(t *testing.T) {
 	prefix := "prefix"
 
 	mockStore := func() kvdb.Store {
-		store := NewMockDropableStore(ctrl)
+		store := NewMockStore(ctrl)
 		store.EXPECT().Close().
 			Times(1).
 			Return(nil)

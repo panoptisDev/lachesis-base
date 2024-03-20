@@ -21,3 +21,7 @@ func (w *closeDropWrapped) Drop() {
 func (w *closeDropWrapped) RealDrop() {
 	w.LazyFlushable.Drop()
 }
+
+func (w *closeDropWrapped) AncientDatadir() (string, error) {
+	return "", nil
+}

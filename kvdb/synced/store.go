@@ -74,7 +74,10 @@ func (s *store) NewBatch() kvdb.Batch {
 		mu:         s.mu,
 		underlying: s.underlying.NewBatch(),
 	}
+}
 
+func (s *store) AncientDatadir() (string, error) {
+	return s.underlying.AncientDatadir()
 }
 
 /*

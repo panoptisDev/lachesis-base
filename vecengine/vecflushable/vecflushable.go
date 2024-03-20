@@ -123,6 +123,10 @@ func (w *VecFlushable) Drop() {
 	panic(errNotImplemented)
 }
 
+func (w *VecFlushable) AncientDatadir() (string, error) {
+	panic(errNotImplemented)
+}
+
 /* Some methods are not implemented and panic when called */
 
 func (w *VecFlushable) Delete(key []byte) error {

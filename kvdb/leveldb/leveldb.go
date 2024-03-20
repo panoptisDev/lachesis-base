@@ -186,6 +186,10 @@ func (db *Database) Drop() {
 	}
 }
 
+func (db *Database) AncientDatadir() (string, error) {
+	return "", nil
+}
+
 // Has retrieves if a key is present in the key-value store.
 func (db *Database) Has(key []byte) (bool, error) {
 	dat, err := db.underlying.Has(key, nil)

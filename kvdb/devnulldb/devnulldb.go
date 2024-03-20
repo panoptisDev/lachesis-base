@@ -82,6 +82,10 @@ func (db *Database) Len() int {
 	return 0
 }
 
+func (db *Database) AncientDatadir() (string, error) {
+	return "", nil
+}
+
 // batch is a write-only memory batch that commits changes to its host
 // database when Write is called. A batch cannot be used concurrently.
 type batch struct{}

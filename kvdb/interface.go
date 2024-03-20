@@ -7,6 +7,8 @@ import (
 	"github.com/ethereum/go-ethereum/ethdb"
 )
 
+//go:generate go run github.com/golang/mock/mockgen -source interface.go -destination table/mock_test.go -package table DBProducer,Store
+
 var (
 	ErrUnsupportedOp = errors.New("operation is unsupported")
 )
