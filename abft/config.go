@@ -3,16 +3,22 @@ package abft
 import "github.com/Fantom-foundation/lachesis-base/utils/cachescale"
 
 type Config struct {
+	// Suppresses the frame missmatch panic - used only for importing older historical event files, disabled by default
+	SuppressFramePanic bool
 }
 
 // DefaultConfig for livenet.
 func DefaultConfig() Config {
-	return Config{}
+	return Config{
+		SuppressFramePanic: false,
+	}
 }
 
 // LiteConfig is for tests or inmemory.
 func LiteConfig() Config {
-	return Config{}
+	return Config{
+		SuppressFramePanic: false,
+	}
 }
 
 // StoreCacheConfig is a cache config for store db.
