@@ -1,3 +1,6 @@
+dbchecker:
+	go build -ldflags="-s -w" -o build/dbchecker ./cmd/dbchecker
+
 .PHONY : test
 test :
 	go test -shuffle=on ./...
