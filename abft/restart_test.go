@@ -8,15 +8,15 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Fantom-foundation/lachesis-base/inter/dag"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag/tdag"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
-	"github.com/Fantom-foundation/lachesis-base/inter/pos"
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/memorydb"
-	"github.com/Fantom-foundation/lachesis-base/lachesis"
-	"github.com/Fantom-foundation/lachesis-base/utils/adapters"
-	"github.com/Fantom-foundation/lachesis-base/vecfc"
+	"github.com/panoptisDev/lachesis-base/inter/dag"
+	"github.com/panoptisDev/lachesis-base/inter/dag/tdag"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/inter/pos"
+	"github.com/panoptisDev/lachesis-base/kvdb"
+	"github.com/panoptisDev/lachesis-base/kvdb/memorydb"
+	"github.com/panoptisDev/lachesis-base/lachesis"
+	"github.com/panoptisDev/lachesis-base/utils/adapters"
+	"github.com/panoptisDev/lachesis-base/vecfc"
 )
 
 func TestRestart_1(t *testing.T) {

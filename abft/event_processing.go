@@ -3,10 +3,10 @@ package abft
 import (
 	"github.com/pkg/errors"
 
-	"github.com/Fantom-foundation/lachesis-base/abft/election"
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/abft/election"
+	"github.com/panoptisDev/lachesis-base/hash"
+	"github.com/panoptisDev/lachesis-base/inter/dag"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
 )
 
 var (

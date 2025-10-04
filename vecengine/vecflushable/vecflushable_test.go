@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 
-	"github.com/Fantom-foundation/lachesis-base/common/bigendian"
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/devnulldb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/leveldb"
+	"github.com/panoptisDev/lachesis-base/common/bigendian"
+	"github.com/panoptisDev/lachesis-base/kvdb"
+	"github.com/panoptisDev/lachesis-base/kvdb/devnulldb"
+	"github.com/panoptisDev/lachesis-base/kvdb/leveldb"
 )
 
 // TestVecflushableNoBackup tests normal operation of vecflushable, before and after

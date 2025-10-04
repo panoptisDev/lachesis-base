@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Fantom-foundation/lachesis-base/abft"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/abft"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/urfave/cli/v2"
 )

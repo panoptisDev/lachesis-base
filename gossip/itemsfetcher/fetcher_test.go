@@ -1,7 +1,7 @@
 package itemsfetcher_test
 
 import (
-	"github.com/Fantom-foundation/lachesis-base/gossip/itemsfetcher"
+	"github.com/panoptisDev/lachesis-base/gossip/itemsfetcher"
 	"testing"
 	"time"
 )

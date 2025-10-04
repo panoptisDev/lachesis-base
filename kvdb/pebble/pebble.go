@@ -7,8 +7,8 @@ import (
 	"github.com/cockroachdb/pebble"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/utils/piecefunc"
+	"github.com/panoptisDev/lachesis-base/kvdb"
+	"github.com/panoptisDev/lachesis-base/utils/piecefunc"
 )
 
 // Database is a persistent key-value store. Apart from basic data storage

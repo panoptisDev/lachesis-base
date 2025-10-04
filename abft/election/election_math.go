@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/hash"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
 )
 
 // ProcessRoot calculates Atropos votes only for the new root.

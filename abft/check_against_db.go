@@ -5,11 +5,11 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag/tdag"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
-	"github.com/Fantom-foundation/lachesis-base/inter/pos"
-	"github.com/Fantom-foundation/lachesis-base/lachesis"
+	"github.com/panoptisDev/lachesis-base/hash"
+	"github.com/panoptisDev/lachesis-base/inter/dag/tdag"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/inter/pos"
+	"github.com/panoptisDev/lachesis-base/lachesis"
 )
 
 func CheckEpochAgainstDB(conn *sql.DB, epoch idx.Epoch) error {

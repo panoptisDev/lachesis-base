@@ -9,12 +9,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag/tdag"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
-	"github.com/Fantom-foundation/lachesis-base/inter/pos"
-	"github.com/Fantom-foundation/lachesis-base/utils"
+	"github.com/panoptisDev/lachesis-base/hash"
+	"github.com/panoptisDev/lachesis-base/inter/dag"
+	"github.com/panoptisDev/lachesis-base/inter/dag/tdag"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/inter/pos"
+	"github.com/panoptisDev/lachesis-base/utils"
 )
 
 type fakeEdge struct {

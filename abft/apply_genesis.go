@@ -3,8 +3,8 @@ package abft
 import (
 	"fmt"
 
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
-	"github.com/Fantom-foundation/lachesis-base/inter/pos"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/inter/pos"
 )
 
 // Genesis stores genesis state

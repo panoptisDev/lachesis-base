@@ -3,8 +3,8 @@ package dag
 import (
 	"fmt"
 
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/hash"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
 )
 
 type Event interface {

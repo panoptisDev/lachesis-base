@@ -1,10 +1,10 @@
 package eventcheck
 
 import (
-	"github.com/Fantom-foundation/lachesis-base/eventcheck/basiccheck"
-	"github.com/Fantom-foundation/lachesis-base/eventcheck/epochcheck"
-	"github.com/Fantom-foundation/lachesis-base/eventcheck/parentscheck"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag"
+	"github.com/panoptisDev/lachesis-base/eventcheck/basiccheck"
+	"github.com/panoptisDev/lachesis-base/eventcheck/epochcheck"
+	"github.com/panoptisDev/lachesis-base/eventcheck/parentscheck"
+	"github.com/panoptisDev/lachesis-base/inter/dag"
 )
 
 // Checkers is collection of all the checkers

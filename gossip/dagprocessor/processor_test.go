@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Fantom-foundation/lachesis-base/hash"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag"
-	"github.com/Fantom-foundation/lachesis-base/inter/dag/tdag"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
-	"github.com/Fantom-foundation/lachesis-base/utils/cachescale"
-	"github.com/Fantom-foundation/lachesis-base/utils/datasemaphore"
+	"github.com/panoptisDev/lachesis-base/hash"
+	"github.com/panoptisDev/lachesis-base/inter/dag"
+	"github.com/panoptisDev/lachesis-base/inter/dag/tdag"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/utils/cachescale"
+	"github.com/panoptisDev/lachesis-base/utils/datasemaphore"
 )
 
 func TestProcessor(t *testing.T) {

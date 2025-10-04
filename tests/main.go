@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Fantom-foundation/lachesis-base/abft"
-	"github.com/Fantom-foundation/lachesis-base/inter/idx"
-	"github.com/Fantom-foundation/lachesis-base/kvdb"
-	"github.com/Fantom-foundation/lachesis-base/kvdb/memorydb"
-	"github.com/Fantom-foundation/lachesis-base/utils/adapters"
-	"github.com/Fantom-foundation/lachesis-base/vecfc"
+	"github.com/panoptisDev/lachesis-base/abft"
+	"github.com/panoptisDev/lachesis-base/inter/idx"
+	"github.com/panoptisDev/lachesis-base/kvdb"
+	"github.com/panoptisDev/lachesis-base/kvdb/memorydb"
+	"github.com/panoptisDev/lachesis-base/utils/adapters"
+	"github.com/panoptisDev/lachesis-base/vecfc"
 )
 
 func main() {
